@@ -1,8 +1,22 @@
 # go-mp3-podcast
 
+This is a fork of [go-mp3-podcast](https://github.com/rosmo/go-mp3-podcast).  The main changes so far have been to make the repository retrievable using `go get`.
+
 This is an utility to take a directory containing MP3s and turn them into an
 RSS feed. The utility is configured using a simple YAML file (see config.yml
 for example).
+
+## How to build
+
+You should be able to download, build, and install using:
+
+`go get github/pgrahamdev/go-mp3-podcast`
+
+and then
+
+`go install github.com/pgrahamdev/go-mp3-podcast`
+
+which will place the `go-mp3-podcast` binary in `$GOPATH/bin`.
 
 ## How to run
 
