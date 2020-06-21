@@ -3,7 +3,7 @@ package process
 import (
 	"errors"
 	id3 "github.com/casept/id3-go"
-	"github.com/rosmo/go-mp3-podcast/config"
+	"github.com/pgrahamdev/go-mp3-podcast/config"
 	"mime"
 	"os"
 	"path/filepath"
