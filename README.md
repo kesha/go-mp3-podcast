@@ -6,15 +6,25 @@ This is an utility to take a directory containing MP3s and turn them into an
 RSS feed. The utility is configured using a simple YAML file (see config.yml
 for example).
 
+## How to build with docker
+```bash
+docker run --rm -ti -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.14 bash -C \
+       "go get github.com/kesha/go-mp3-podcast && \
+       go install github.com/kesha/go-mp3-podcast && \
+       cp /go/bin/go-mp3-podcast ."
+docker rmi -f golang:1.14
+chmod +x go-mp3-podcast
+```
+
 ## How to build
 
 You should be able to download, build, and install using:
 
-`go get github/pgrahamdev/go-mp3-podcast`
+`go get github.com/kesha/go-mp3-podcast`
 
 and then
 
-`go install github.com/pgrahamdev/go-mp3-podcast`
+`go install github.com/kesha/go-mp3-podcast`
 
 which will place the `go-mp3-podcast` binary in `$GOPATH/bin`.
 
